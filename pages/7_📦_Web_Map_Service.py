@@ -62,9 +62,6 @@ with row1_col2:
                 m.add_wms_layer(
                     url, layers=layer, name=layer, attribution=" ", transparent=True
                 )
-        if add_legend and legend_text:
-            legend_dict = ast.literal_eval(legend_text)
-            m.add_legend(legend_dict=legend_dict)
-
+       
         m.to_streamlit(width, height)
 
