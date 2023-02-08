@@ -37,9 +37,9 @@ layers = None
 
 with row1_col2:
 
-    esa_landcover = "https://services.terrascope.be/wms/v2"
+    DataHub = "https://unosat-datahub.cern.ch/geoserver/geonode/wms?"
     url = st.text_input(
-        "Enter a WMS URL:", value="https://services.terrascope.be/wms/v2"
+        "Enter a WMS URL:", value="https://unosat-datahub.cern.ch/geoserver/geonode/wms?"
     )
     empty = st.empty()
 
@@ -47,15 +47,15 @@ with row1_col2:
         options = get_layers(url)
 
         default = None
-        if url == esa_landcover:
-            default = "WORLDCOVER_2020_MAP"
+        if url == DataHub:
+            default = "ETH_adm1"
         layers = empty.multiselect(
             "Select WMS layers to add to the map:", options, default=default
         )
        
 
     with row1_col1:
-        m = leafmap.Map(center=(36.3, 0), zoom=2)
+        m = leafmap.Map(center=(0, 0), zoom=2)
 
         if layers is not None:
             for layer in layers:
