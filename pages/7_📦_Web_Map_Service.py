@@ -21,7 +21,7 @@ def get_layers(url):
     return options
 
 
-st.title("Web Map Service (WMS)")
+st.title("DataHub WMS")
 st.markdown(
     """
 This app is a demonstration of loading Web Map Service (WMS) layers. Simply enter the URL of the WMS service 
