@@ -52,17 +52,7 @@ with row1_col2:
         layers = empty.multiselect(
             "Select WMS layers to add to the map:", options, default=default
         )
-        add_legend = st.checkbox("Add a legend to the map", value=True)
-        if default == "WORLDCOVER_2020_MAP":
-            legend = str(leafmap.builtin_legends["ESA_WorldCover"])
-        else:
-            legend = ""
-        if add_legend:
-            legend_text = st.text_area(
-                "Enter a legend as a dictionary {label: color}",
-                value=legend,
-                height=200,
-            )
+       
 
     with row1_col1:
         m = leafmap.Map(center=(36.3, 0), zoom=2)
