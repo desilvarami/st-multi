@@ -5,8 +5,8 @@ import leafmap.foliumap as leafmap
 st.set_page_config(layout="wide")
 
 markdown = """
-Web App URL: <https://template.streamlit.app>
-GitHub Repository: <https://github.com/giswqs/streamlit-multipage-template>
+Web App URL: <https://desilvarami-st-multi-streamlit-app-ge5ygf.streamlit.app/>
+GitHub Repository: <https://github.com/desilvarami/st-multi/>
 """
 
 st.sidebar.title("About")
