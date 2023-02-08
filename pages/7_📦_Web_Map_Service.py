@@ -55,7 +55,7 @@ with row1_col2:
        
 
     with row1_col1:
-        m = leafmap.Map(center=(8, 40), zoom=6)
+        m = leafmap.Map(center=(8, 40), zoom=5)
 
         if layers is not None:
             for layer in layers:
