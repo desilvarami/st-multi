@@ -24,9 +24,7 @@ def get_layers(url):
 st.title("DataHub WMS")
 st.markdown(
     """
-This app is a demonstration of loading Web Map Service (WMS) layers. Simply enter the URL of the WMS service 
-in the text box below and press Enter to retrieve the layers. Go to https://apps.nationalmap.gov/services to find 
-some WMS URLs if needed.
+This map brings down a dataset from UNOSAT-DATAHUB. The Default layer is ETH_adm1, representing Admin Boundaries of Ethiopia. Hence the Map Center is set to Ethiopia.
 """
 )
 
